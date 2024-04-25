@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers</title>
+    <link rel="stylesheet" href="./styles/vitamin.css">
+</head>
+
+<body>
+   <div class="categories">
+    <div id="logo">
+        <a href="./index.html"> <img src="./images/logo.jpeg" alt="" ></a>
+    </div>
+    <div id="catg1">
+        <p>Shops By Category</p>
+    </div>
+    <div id="catg1">
+        <a href="./bestsellers.html"> <p>Best Sellers</p></a>
+        <p>Brands</p>
+        <p>Deals</p>
+        <p>Blog</p>
+        <p>Gift Card</p>
+        
+    </div>
+    <div id="catg1" >
+        <p>Customer Support</p>
+        <p>Store locator</p>
+    </div>
+    <div id="catg1">
+        <a href="./cart.html"><button id="cartbtn">🛒</button></a> 
+     </div>
+   </div>
+    <hr id="hr1">
+    <br><br><br>
+
+    <div class="box">
+
+        <img id="image">
+    </div>
+  <div id="productContainer">
+
+  </div>
+
+    <div class="finals">
+        <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/hklogo.png" alt="">
+        <div class="final">
+            <div>
+                <h4>HelathKart</h4>
+                <p>about us</p>
+                <p>
+                    contact us
+                </p>
+                <p>
+                    refer & earn
+                </p>
+                <p>Loyalty Program</p>
+                <p>HK Consultant</p>
+                <p>Blogs,videos & more </p>
+                <p>Brand Directory</p>
+                <p>Aunthenticity Guaranteed</p>
+                <p>carrers</p>
+            </div>
+
+            <div>
+                <h4>Brands</h4>
+                <p>MusclesBlaze</p>
+                <p>Fit Foods</p>
+                <p>HK vitals</p>
+                <p>TrueBasics</p>
+                <p>Gritzo</p>
+                <p>bGreen</p>
+            </div>
+
+            <div>
+                <h4>
+                    Helath & Fitness
+                </h4>
+                <p>Bodybuilding</p>
+                <p>Health & Skin Care</p>
+                <p>Sports & Nutrition</p>
+                <p>Vitamins & Supplements</p>
+                <p>Ayurveda & Herbs</p>
+                <p>Health Food & Drinks</p>
+                <p>Fitness</p>
+                <p>Wellness</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p>My Accounts</p>
+                <p>Track Your Order</p>
+                <p>Store Locator</p>
+                <p>Hk Cash</p>
+                <p>HK Coupons</p>
+                <p>FAQs</p>
+                <p>Sell On HealthKart</p>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <p>care@healthkart.com</p>
+                <p>📞 0124-4616444</p>
+                <p>The Presidency Tower, Tower-B, 2nd Floor, 46/4, Mehrauli Rd opp. government girls college, Anamika
+                    Enclave, Sector 14, Gurugram, Haryana</p>
+
+            </div>
+
+            <div>
+                <img src="./images/final.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var image = [
+
+        "https://img3.hkrtcdn.com/22847/bnr_2284672_o.jpg",
+        "https://img1.hkrtcdn.com/22822/bnr_2282190_o.png",
+        "https://img9.hkrtcdn.com/22822/bnr_2282198_o.jpg",
+        "https://img5.hkrtcdn.com/22848/bnr_2284744_o.jpg",
+        "https://img9.hkrtcdn.com/22823/bnr_2282218_o.jpg",
+        "https://img7.hkrtcdn.com/22852/bnr_2285166_o.jpg",
+
+    ]
+
+    var i = 0;
+    function slideshow() {
+        document.getElementById("image").src = image[i];
+        if (i < image.length - 1) {
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout("slideshow()", 2000);
+    }
+    window.onload = slideshow;
+
+
+let data=[
+{
+      name:"MuscleBlaze Whey Performance (70%) Protein OP, 4 kg (8.8 lb), Chocolate",
+      brand:"Muscleblaze",
+      rating:4.7,
+      mrp:8599,
+      Price:8399,
+      Discount:"2%",
+      img:"https://img6.hkrtcdn.com/12151/prd_1215035-MuscleBlaze-Whey-Performance-70-Protein-OP-8.8-lb-Chocolate_o.jpg",   
+      id:9
+    },
+     {
+      name:"MuscleBlaze Super Gainer XXL Powder, 3 kg (6.6 lb), Cookies & Cream",
+      brand:"Muscleblaze",
+      rating:4.4,
+      mrp:3749,
+      Price:2449,
+      Discount:"34%",
+      img:"https://img4.hkrtcdn.com/8698/prd_869763-MuscleBlaze-Super-Gainer-XXL-OP-6.6-lb-Cookies-Cream_o.jpg",   
+      id:10
+    },
+     {
+      name:"MuscleBlaze Super Gainer XXL Powder, 3 kg (6.6 lb), Chocolate",
+      brand:"Muscleblaze",
+      rating:4.4,
+      mrp:4299,
+      Price:2449,
+      Discount:"43%",
+      img:"https://img2.hkrtcdn.com/12139/prd_1213811-MuscleBlaze-Super-Gainer-XXL-OP-6.6-lb-Chocolate_o.jpg",   
+      id:11
+    },
+     {
+      name:"MuscleBlaze Super Gainer XXL Powder, 1 kg (2.2 lb), Cookies & Cream",
+      brand:"Muscleblaze",
+      rating:4.4,
+      mrp:1449,
+      Price:849,
+      Discount:"41%",
+      img:"https://img4.hkrtcdn.com/12151/prd_1215023-MuscleBlaze-Super-Gainer-XXL-OP-2.2-lb-Cookies-Cream_o.jpg",   
+      id:12
+    },
+     {
+      name:"MuscleBlaze High Protein Lean Mass Gainer Powder, 5 kg (11 lb), Chocolate",
+      brand:"Muscleblaze",
+      rating:0,
+      mrp:6999,
+      Price:5599,
+      Discount:"20%",
+      img:"https://img6.hkrtcdn.com/12326/prd_1232515-MuscleBlaze-High-Protein-Lean-Mass-Gainer-OP-11-lb-Chocolate_o.jpg",   
+      id:13
+    },
+     {
+      name:"MuscleBlaze Super Gainer XXL, 3 kg (6.6 lb), Chocolate Mint",
+      brand:"Muscleblaze",
+      rating:4.5,
+      mrp:4299,
+      Price:2449,
+      Discount:"43%",
+      img:"https://img8.hkrtcdn.com/13355/prd_1335497-MuscleBlaze-Super-Gainer-XXL-6.6-lb-Chocolate-Mint_o.jpg" ,  
+      id:14
+    },
+     {
+      name:"MB Fuel One Whey Protein Powder Immunity+, 2 kg (4.4 lb), Chocolate",
+      brand:"MB Fuel One",
+      rating:4.5,
+      mrp:4499,
+      Price:3599,
+      Discount:"20%",
+      img:"https://img2.hkrtcdn.com/15126/prd_1512521-MB-Fuel-One-Whey-Protein-Immunity-OP-4.4-lb-Chocolate_o.jpg",   
+      id:15,
+    },
+     {
+      name:"MB Fuel One Whey Protein Powder Immunity+, 1 kg (2.2 lb), Mango",
+      brand:"MB Fuel One",
+      rating:4.5,
+      mrp:2669,
+      Price:1749,
+      Discount:"34%",
+      img:"https://img4.hkrtcdn.com/15126/prd_1512523-MB-Fuel-One-Whey-Protein-Immunity-OP-2.2-lb-Mango_o.jpg"   ,
+      id:16,
+    },
+     {
+      name:"MB Fuel One Whey Protein Powder Immunity+, 500 g (1.1 lb), Chocolate",
+      brand:"MB Fuel One",
+      rating:4.5,
+      mrp:1199,
+      Price:1049,
+      Discount:"12%",
+      img:"https://img1.hkrtcdn.com/22481/prd_2248030-MB-Fuel-One-Whey-Protein-Immunity-OP-1.1-lb-Chocolate_o.jpg",   
+      id:17,
+    },
+     {
+      name:"MuscleBlaze Beginner's Protein Powders, 1 kg (2.2 lb), Blueberry",
+      brand:"Muscleblaze",
+      rating:4.4,
+      mrp:2279,
+      Price:1329,
+      Discount:"41%",
+      img:"https://img6.hkrtcdn.com/15126/prd_1512585-MuscleBlaze-Beginners-Protein-OP-2.2-lb-Blueberry_o.jpg"   ,
+      id:18,
+     }
+];
+
+
+let Container=document.querySelector("#productContainer")
+console.log(Container)
+function DisplayProduct(){
+  Container.innerHTML=""
+    data.forEach((product)=>{
+        let card=document.createElement("div")
+        let image=document.createElement("img")
+        let brand=document.createElement("p")
+        let name=document.createElement("p")
+        name.innerHTML=product.name;
+        
+        let price=document.createElement("h3")
+        let add_to_cart=document.createElement("button")
+          add_to_cart.textContent="Add to Cart"
+          image.src=product.img;
+          brand.textContent=product.brand;
+         
+          price.textContent=`₹${product.Price}`;
+        
+        add_to_cart.addEventListener("click",()=>{
+           addToCart(product);
+        })
+          card.append(image,name,brand,price,add_to_cart)
+          Container.append(card)
+    })
+}
+
+
+ DisplayProduct()
+
+let CartArr=JSON.parse(localStorage.getItem("cartData"))||[]
+ function addToCart(product){
+ CartArr.push(product)
+ localStorage.setItem("cartData",JSON.stringify(CartArr))
+ }
+
+</script>
